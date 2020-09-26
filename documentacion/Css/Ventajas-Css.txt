@@ -1,0 +1,19 @@
+*Separación del contenido y la presentación
+CSS facilita la publicación de contenido en múltiples formatos de presentación basado en parámetros nominales. Estos incluyen preferencias 
+explícitas del usuario, diferentes navegadores web, el tipo de dispositivo usado para ver el contenido (una PC o un teléfono 
+inteligente), la localización geográfica u otras variables.
+
+*Consistencia del sitio
+Cuando CSS es usado efectivamente, en términos de herencia y "cascading", una hoja de estilos global puede ser usado para aplicar 
+estilos a todo un sitio. Si más adelante estos estilos deben de ser cambiados, los cambios pueden ser hechos solo con cambiar las 
+reglas en la hoja de estilos global. Antes de CSS, esto era mucho más difícil, caro y más tardado.
+
+*Ancho de banda
+Una hoja de estilos interna o externa, especifica el estilo para un conjunto de elementos HTML seleccionados por clase, tipo, o 
+herencia. Esto es más eficiente que repetir información para cada ocurrencia del elemento. Una hoja de estilos externa usualmente es 
+guardada en la caché del navegador, y puede ser usada en múltiples páginas sin ser cargada de nuevo, reduciendo la transferencia de 
+datos a través de la red.
+
+*Formateo de página
+Con un cambio simple en una sola línea, puede cambiarse la hoja de estilos para la misma página. Esto trae ventajas para la 
+accesibilidad, además de que posibilita adaptar el sitio a diferentes dispositivos.
