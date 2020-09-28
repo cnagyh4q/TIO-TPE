@@ -1,0 +1,9 @@
+Javascript ¿para qué?
+Algunos ejemplos:
+● Validar formularios (lo que no permita HTML5)
+● Reaccionar a lo que haga el usuario (click, teclear, etc)
+● Cambiar algo al pasar el mouse (si no lo permite CSS)
+● Partes de páginas que se muestran/ocultan
+● Hacer cálculos complejos
+● Carga dinámica de contenido (AJAX)
+● Hacer Single Page Applications (SPAs)
