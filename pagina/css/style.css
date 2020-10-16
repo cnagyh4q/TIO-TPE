@@ -37,27 +37,14 @@ h1 {
 	color: white;
 }
 
-.html {
+.html, .css, .js {
 	background: #c1e2f1;
     border: 1px solid #999999;
     padding: 20px;
     margin-bottom: 15px;
     text-align: justify;
 }
-.css {
-	background: #c1e2f1;
-    border: 1px solid #999999;
-    padding: 20px;
-    margin-bottom: 15px;
-    text-align: justify;
-}
-.js {
-	background: #c1e2f1;
-    border: 1px solid #999999;
-    padding: 20px;
-    margin-bottom: 15px;
-    text-align: justify;
-}
+
 #footer {
 	border : 1px solid #999999;
 	margin: 5px;
