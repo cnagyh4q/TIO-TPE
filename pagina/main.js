@@ -13,4 +13,5 @@ async function load(templateName) {
 
 document.addEventListener('DOMContentLoaded', () => {
     content = document.querySelector('#content');
+    load('home');
 });
