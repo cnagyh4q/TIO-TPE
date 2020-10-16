@@ -1,0 +1,24 @@
+La novedad más importante que aporta CSS 3, de cara a los desarrolladores de webs, consiste en la incorporación de nuevos mecanismos 
+para mantener un mayor control sobre el estilo con el que se muestran los elementos de las páginas, sin tener que recurrir a trucos
+o hacks, que a menudo complicaban el código de las web.
+
+He aquí una lista de las principales propiedades que son novedad en CSS3:
+*Bordes
+border-color
+border-image
+border-radius
+box-shadow
+
+*Fondos
+background-origin
+background-clip
+background-size
+hacer capas con múltiples imágenes de fondo
+
+*Color
+colores HSL
+colores HSLA
+colores RGBA
+Opacidad
+
+Entre muchos otros.

@@ -1,0 +1,34 @@
+Single Page Application (SPA)
+
+Es un tipo de aplicación web
+    • Nunca se recarga completamente el navegador
+    • Los recursos se cargan parcial y dinámicamente cuando lo requiera la página
+
+AJAX
+
+Asynchronous Javascript And XML.
+
+Técnica frontend que es base de las aplicaciones web modernas.
+
+    • No es un lenguaje o tecnología.
+    • Es una técnica que combina un set de tecnologías conocidas, para hacer mejorar la experiencia de usuario en las páginas web (más amigables y rápidas)
+
+Qué es AJAX?
+
+    • Técnica de carga asíncrona de contenido dinámico y datos del server.
+
+    • Permite cambios dinámicos del lado del cliente.
+
+    • Mejora la experiencia del usuario.
+	
+Ventajas / Desventajas 
+
+    • Pagina mas dinamica
+    • Mas velocidad
+    • El user no pierde tiempo
+    • Guardar datos en el server
+
+    • Carga optimista puede fallar y confundir al usuario
+    • Sigue dependiendo de la conexion
+    • Necesita aprendizaje nuevo
+

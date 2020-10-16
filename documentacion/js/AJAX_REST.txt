@@ -1,0 +1,17 @@
+API
+    • Una API es una interfaz que nos da una aplicación para comunicarnos con ella
+
+REST
+    • REST: REpresentational State Transfer, es un tipo de arquitectura de desarrollo web que se apoya totalmente en el estándar HTTP.
+    • Es el tipo de arquitectura más natural y estándar para crear APIs para servicios orientados a Internet.
+    • La mayoría de las APIs REST usan JSON para comunicarse.
+    • Se asocian URLs a recursos.
+    • Al que se puede acceder o modificar mediante los métodos del protocolo HTTP.
+    • Se basa en acciones (llamadas verbos) que manipulan los datos.
+        ◦ POST: Crear un recurso
+        ◦ GET: Obtener uno o muchos  recursos
+        ◦ PUT: Actualizar uno o muchos recursos
+        ◦ DELETE: Borrar un recurso
+    • Se utilizan los errores del protocolo HTTP.
+        ◦ 200 ok, 404 not found, etc.
+
