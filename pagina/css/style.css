@@ -15,17 +15,14 @@ h1 {
 	background-color: #d0cece;
 }
 
-#header ul li {
-	list-style: none;
-	display: inline;
-	background: #e8ebf5;
-	border-style: outset;
-	padding: 5px 15px;
-}
-
 #header a {
 	text-decoration: none;
-	color: black;
+	color: whitesmoke;
+}
+
+#nav {
+	justify-content: flex-start;
+	grid-gap: .5rem;
 }
 
 #content {
