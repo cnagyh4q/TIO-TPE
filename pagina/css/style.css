@@ -1,0 +1,54 @@
+﻿* {
+	font-family: 'Playfair Display', serif;
+}
+
+h1 {
+	color: green;
+	text-transform: uppercase;
+}
+
+#header {
+	border : 1px solid #999999;
+	margin: 5px;
+	text-align: center;
+	width: 100%;
+	background-color: #d0cece;
+}
+
+#header a {
+	text-decoration: none;
+	color: whitesmoke;
+}
+
+#nav {
+	justify-content: flex-start;
+	grid-gap: .5rem;
+}
+
+#content {
+	margin: 5px;
+	padding-top: 2px;
+}
+#footer a {
+	text-decoration: none;
+	color: white;
+}
+
+.html, .css, .js {
+	background: #c1e2f1;
+    border: 1px solid #999999;
+    padding: 20px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+#footer {
+	border : 1px solid #999999;
+	margin: 5px;
+	width: 100%;
+	background: black;
+	text-align: center;
+	padding: 20px 0;
+	font-size: 30px;
+	font-weight: lighter;
+}

@@ -1,0 +1,22 @@
+Introducción a eventos
+
+Los eventos son acciones u ocurrencias que suceden en el sistema que está programando y que el sistema le informa para que pueda responder de alguna manera si lo desea. Por ejemplo, si el usuario hace clic en un botón en una página web, es posible que desee responder a esa acción mostrando un cuadro de información. En este artículo, discutiremos algunos conceptos importantes que rodean los eventos y veremos cómo funcionan en los navegadores. Este no será un estudio exhaustivo; solo lo que necesitas saber en esta etapa.
+
+Una serie de eventos afortunados
+
+Como se mencionó anteriormente, los eventos son acciones u ocurrencias que suceden en el sistema que está programando — el sistema disparará una señal de algún tipo cuando un evento ocurra y también proporcionará un mecanismo por el cual se puede tomar algún tipo de acción automáticamente (p.e., ejecutando algún código) cuando se produce el evento. Por ejemplo, en un aeropuerto cuando la pista está despejada para que despegue un avión, se comunica una señal al piloto y, como resultado, comienzan a pilotar el avión.
+
+En el caso de la Web, los eventos se desencadenan dentro de la ventana del navegador y tienden a estar unidos a un elemento específico que reside en ella — podría ser un solo elemento, un conjunto de elementos, el documento HTML cargado en la pestaña actual o toda la ventana del navegador. Hay muchos tipos diferentes de eventos que pueden ocurrir, por ejemplo:
+
+El usuario hace clic con el mouse sobre un elemento determinado o coloca el cursor sobre un elemento determinado.
+El usuario presiona una tecla en el teclado.
+El usuario cambia el tamaño o cierra la ventana del navegador.
+Una página web termina de cargar.
+Un formulario se envía
+Un video se reproduce, pausa o finaliza la reproducción.
+Un error ocurre.
+Se deducirá de esto (y echar un vistazo a MDN Referencia de eventos) que hay muchos eventos a los que se puede responder.
+
+Cada evento disponible tiene un controlador de eventos, que es un bloque de código (generalmente una función JavaScript definida por el usuario) que se ejecutará cuando se active el evento. Cuando dicho bloque de código se define para ejecutarse en respuesta a un disparo de evento, decimos que estamos registrando un controlador de eventos. Tenga en cuenta que los controladores de eventos a veces se llaman oyentes de eventos — son bastante intercambiables para nuestros propósitos, aunque estrictamente hablando, trabajan juntos. El oyente escucha si ocurre el evento y el controlador es el código que se ejecuta en respuesta a que ocurra.
+
+

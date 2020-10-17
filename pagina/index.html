@@ -4,26 +4,30 @@
 <head>
     <meta charset="utf-8" />
     <title> Introduccion al Desarrollo Web </title>
-	<link href="style.css" rel="stylesheet" type="text/css"/>
 	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
 	<script src="./main.js"></script>
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link href="css/style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 	<div id="header">
 		<img src="images/logo.jpg"> </img>
-		<nav>
-			<button onclick="load('home')">Home</button>
-			<button onclick="load('docu_html')">HTML</button>
-			<button onclick="load('docu_css')">CSS</button>
-			<button onclick="load('docu_js')">JS</button>
+		<nav class="navbar navbar-dark bg-dark" id="nav">
+			<button class="navbar-brand" onclick="load('home')">Home</button>
+			<button class="btn btn-primary" onclick="load('docu_html')">HTML</button>
+			<button class="btn btn-primary" onclick="load('docu_css')">CSS</button>
+			<button class="btn btn-primary" onclick="load('docu_js')">JS</button>
 		</nav>
 	</div>
 
 	<div id="content"></div>
-	
+
 	<div id="footer">
-		<p> Footer </p>
+		<a href="">- INFORME -</a>
 	</div>
 
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="./js/bootstrap.bundle.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
 </body>
 </html>
