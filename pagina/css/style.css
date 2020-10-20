@@ -52,3 +52,9 @@ h1 {
 	font-size: 30px;
 	font-weight: lighter;
 }
+
+#reloj {
+	position: absolute;
+	top: 1rem;
+	left: 1rem;
+}

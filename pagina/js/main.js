@@ -14,4 +14,10 @@ async function load(templateName) {
 document.addEventListener('DOMContentLoaded', () => {
     content = document.querySelector('#content');
     load('home');
+
+    const reloj = document.querySelector('#reloj');
+    setInterval(() => {
+        let d = new Date();
+        reloj.innerHTML = `${d.getFullYear()}/${d.getMonth()+1}/${d.getDate()} ${d.getHours()}:${d.getMinutes()}:${d.getSeconds()} `;
+    }, 1000);
 });
