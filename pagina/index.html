@@ -2,133 +2,38 @@
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
+	<meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <title> Introduccion al Desarrollo Web </title>
-	<link href="style.css" rel="stylesheet" type="text/css"/>
 	<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-	<script src="script.js"></script>
+	<script src="js/main.js"></script>
+	<link rel="stylesheet" href="./css/bootstrap.min.css">
+	<link href="css/style.css" rel="stylesheet" type="text/css"/>
 </head>
 <body>
 	<div id="header">
+		<div id="reloj"></div>
 		<img src="images/logo.jpg"> </img>
-		<ul id="nav">
-			<li><a href="#">Home</a></li>
-			<li><a href="#html">HTML</a></li>
-			<li><a href="#css">CSS</a></li>
-			<li><a href="#javascript">Javascript</a></li>
-		</ul>
+		<nav class="navbar navbar-dark bg-dark" id="nav">
+			<button class="navbar-brand" onclick="load('home')">Home</button>
+			<button class="btn btn-primary" onclick="load('docu_html')">HTML</button>
+			<button class="btn btn-primary" onclick="load('docu_html5')">HTML 5</button>
+			<button class="btn btn-primary" onclick="load('docu_css')">CSS</button>
+			<button class="btn btn-primary" onclick="load('docu_css3')">CSS 3</button>
+			<button class="btn btn-primary" onclick="load('docu_js')">JS</button>
+			<button class="btn btn-primary" onclick="load('docu_jsavanzado')">JS Avanzado</button>
+		</nav>
 	</div>
 
-	<div id="content">
-
-			<div class="html">
-				<h3 id="html"> HTML </h3> 
-				<p> HTML, siglas en inglés de HyperText Markup Language (‘lenguaje de marcas de hipertexto’), hace referencia al lenguaje de marcado para la elaboración de páginas web. Es un estándar que sirve de referencia del software que conecta con la elaboración de páginas web en sus diferentes versiones, define una estructura básica y un código (denominado código HTML) para la definición de contenido de una página web, como texto, imágenes, videos, juegos, entre otros. Es un estándar a cargo del World Wide Web Consortium (W3C) o Consorcio WWW, organización dedicada a la estandarización de casi todas las tecnologías ligadas a la web, sobre todo en lo referente a su escritura e interpretación. HTML se considera el lenguaje web más importante siendo su invención crucial en la aparición, desarrollo y expansión de la World Wide Web (WWW). Es el estándar que se ha impuesto en la visualización de páginas web y es el que todos los navegadores actuales han adoptado.​
-				El lenguaje HTML basa su filosofía de desarrollo en la diferenciación. Para añadir un elemento externo a la página (imagen, vídeo, script, entre otros.), este no se incrusta directamente en el código de la página, sino que se hace una referencia a la ubicación de dicho elemento mediante texto. De este modo, la página web contiene solamente texto mientras que recae en el navegador web (interpretador del código) la tarea de unir todos los elementos y visualizar la página final. Al ser un estándar, HTML busca ser un lenguaje que permita que cualquier página web escrita en una determinada versión, pueda ser interpretada de la misma forma (estándar) por cualquier navegador web actualizado.
-				¿Cuáles son las características principales del HTML? HTML es un lenguaje de marcado que nos permite indicar la estructura de nuestro documento mediante etiquetas. Este lenguaje nos ofrece una gran adaptabilidad, una estructuración lógica y es fácil de interpre­tar tanto por humanos como por máquinas.
-				Sin embargo, a lo largo de sus diferentes versiones, se han incorporado y suprimido diversas características, con el fin de hacerlo más eficiente y facilitar el desarrollo de páginas web compatibles con distintos navegadores y plataformas (PC de escritorio, portátiles, teléfonos inteligentes, tabletas, etc.) No obstante, para interpretar correctamente una nueva versión de HTML, los desarrolladores de navegadores web deben incorporar estos cambios y el usuario debe ser capaz de usar la nueva versión del navegador con los cambios incorporados. Normalmente los cambios son aplicados mediante parches de actualización automática (Firefox, Chrome) u ofreciendo una nueva versión del navegador con todos los cambios incorporados, en un sitio web de descarga oficial (Internet Explorer). Por lo que un navegador desactualizado no será capaz de interpretar correctamente una página web escrita en una versión de HTML superior a la que pueda interpretar, lo que obliga muchas veces a los desarrolladores a aplicar técnicas y cambios que permitan corregir problemas de visualización e incluso de interpretación de código HTML. Así mismo, las páginas escritas en una versión anterior de HTML deberían ser actualizadas o reescritas, lo que no siempre se cumple. Es por ello que ciertos navegadores todavía mantienen la capacidad de interpretar páginas web de versiones HTML anteriores. Por estas razones, todavía existen diferencias entre distintos navegadores y versiones al interpretar una misma página web. </p>
-			</div>
-
-			<div class="css">
-				<h3 id="css"> CSS </h3> 
-				<h4> Definicion </h4>
-				<p> CSS (siglas en inglés de Cascading Style Sheets), en español «Hojas de estilo en cascada», es un lenguaje de diseño gráfico para
-				definir y crear la presentación de un documento estructurado escrito en un lenguaje de marcado.
-				Es muy usado para establecer el diseño visual de los documentos web, e interfaces de usuario escritas en HTML o XHTML;
-				el lenguaje puede ser aplicado a cualquier documento XML, incluyendo XHTML, SVG, XUL, RSS, etcétera.
-				Te puede ayudar a crear tu propio sitio web. Junto con HTML y JavaScript, CSS es una tecnología usada por muchos sitios web para crear
-				páginas visualmente atractivas, interfaces de usuario para aplicaciones web y GUIs para muchas aplicaciones móviles (como Firefox OS).
-
-				CSS está diseñado principalmente para marcar la separación del contenido del documento y la forma de presentación de este,
-				características tales como las capas o layouts, los colores y las fuentes.
-				</p>
-
-				<h4> Ventajas </h4>
-				<p> CSS facilita la publicación de contenido en múltiples formatos de presentación basado en parámetros nominales. Estos incluyen preferencias
-				explícitas del usuario, diferentes navegadores web, el tipo de dispositivo usado para ver el contenido (una PC o un teléfono
-				inteligente), la localización geográfica u otras variables.
-
-				<ul><li> Consistencia del sitio </li></ul>
-				Cuando CSS es usado efectivamente, en términos de herencia y "cascading", una hoja de estilos global puede ser usado para aplicar
-				estilos a todo un sitio. Si más adelante estos estilos deben de ser cambiados, los cambios pueden ser hechos solo con cambiar las
-				reglas en la hoja de estilos global. Antes de CSS, esto era mucho más difícil, caro y más tardado.
-
-				<ul><li> Ancho de banda </li></ul>
-				Una hoja de estilos interna o externa, especifica el estilo para un conjunto de elementos HTML seleccionados por clase, tipo, o
-				herencia. Esto es más eficiente que repetir información para cada ocurrencia del elemento. Una hoja de estilos externa usualmente es
-				guardada en la caché del navegador, y puede ser usada en múltiples páginas sin ser cargada de nuevo, reduciendo la transferencia de
-				datos a través de la red.
-
-				<ul><li> Formateo de página </li></ul>
-				Con un cambio simple en una sola línea, puede cambiarse la hoja de estilos para la misma página. Esto trae ventajas para la
-				accesibilidad, además de que posibilita adaptar el sitio a diferentes dispositivos.
-				</p>
-
-				<h4> Herencia </h4>
-				<p> La herencia es una característica clave en CSS; basada en la relación ancestro-descendiente para operar. La herencia es el mecanismo
-				por el cual las propiedades no sólo se aplican a un solo elemento, sino también a sus descendientes. La herencia se basa en el árbol
-				del documento, el cual es la jerarquía de los elementos XHTML en una página basada en el anidamiento.
-				Los elementos descendientes pueden heredar los valores de las propiedades CSS de un elemento ancestro. En general, los elementos
-				descendientes heredan las propiedades relacionadas al texto, pero las propiedades relacionadas con la caja no. Las propiedades que
-				pueden ser heredadas son el color, fuente, espaciado, el peso de la línea, propiedades de lista, alineación del texto, identado,
-				visibilidad, espaciado de espacios and y espaciado entre palabras. Las propiedades que no pueden ser heredadas son el fondo, bordes,
-				visualización, posicionamiento, tamaño, márgenes, tamaño mínimo y máximo, outline, desbordamiento, relleno, posición, alineación
-				vertical y z-index.
-
-				La herencia previene que algunas propiedades sean declaradas una y otra vez en la hoja de estilos, permitiendo a los diseñadores
-				escribir menos código CSS. Mejora la carga rápida de los sitios por los usuarios, y permite a los clientes ahorrar dinero en los costos
-				de desarrollo y ancho de banda.
-				</p>
-
-				<h4> Selector </h4>
-				<p> <ul> <li> Separación del contenido y la presentación </li> </ul>
-				CSS facilita la publicación de contenido en múltiples formatos de presentación basado en parámetros nominales. Estos incluyen preferencias
-				explícitas del usuario, diferentes navegadores web, el tipo de dispositivo usado para ver el contenido (una PC o un teléfono
-				inteligente), la localización geográfica u otras variables.
-
-				<ul> <li> Consistencia del sitio </li> </ul>
-				Cuando CSS es usado efectivamente, en términos de herencia y "cascading", una hoja de estilos global puede ser usado para aplicar
-				estilos a todo un sitio. Si más adelante estos estilos deben de ser cambiados, los cambios pueden ser hechos solo con cambiar las
-				reglas en la hoja de estilos global. Antes de CSS, esto era mucho más difícil, caro y más tardado.
-
-				<ul> <li> Ancho de banda </li> </ul>
-				Una hoja de estilos interna o externa, especifica el estilo para un conjunto de elementos HTML seleccionados por clase, tipo, o
-				herencia. Esto es más eficiente que repetir información para cada ocurrencia del elemento. Una hoja de estilos externa usualmente es
-				guardada en la caché del navegador, y puede ser usada en múltiples páginas sin ser cargada de nuevo, reduciendo la transferencia de
-				datos a través de la red.
-
-				<ul> <li> Formateo de página </li> </ul> </ul>
-				Con un cambio simple en una sola línea, puede cambiarse la hoja de estilos para la misma página. Esto trae ventajas para la
-				accesibilidad, además de que posibilita adaptar el sitio a diferentes dispositivos.
-				</p>
-
-			</div>
-
-			<div class="js">
-				<h3 id="javascript"> Javascript </h3> 
-				<p> Javascript ¿para qué?
-					Algunos ejemplos:
-					<ul>
-						<li> Validar formularios (lo que no permita HTML5) </li> 
-						<li> Reaccionar a lo que haga el usuario (click, teclear, etc) </li> 
-						<li> Cambiar algo al pasar el mouse (si no lo permite CSS) </li> 
-						<li> Partes de páginas que se muestran/ocultan </li> 
-						<li> Hacer cálculos complejos </li> 
-						<li> Carga dinámica de contenido (AJAX) </li> 
-						<li> Hacer Single Page Applications (SPAs) </li> 
-					</ul>
-					Prueba alertas en JavaScript
-					<button id="alerta" > Alerta </button>
-				</p>
-			</div>			
-
-	</div>
-	
-
+	<div id="content" class="container"></div>
 
 	<div id="footer">
 		<a href="">- INFORME -</a>
 	</div>
 
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="./js/bootstrap.bundle.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
 </body>
 </html>
